@@ -11,16 +11,23 @@ function rotate(nums, k) {
     // Reverse the remaining elements
     reverse(nums, k, n - 1);
 
-    console.log(nums);
+    //console.log(nums);
   }
   
   function reverse(nums, start, end) {
+    //console.log(nums);
     while (start < end) {
+        //console.log("start index " + start);
+        //console.log("end index " + end);
       const temp = nums[start];
+      //console.log("start value " + temp);
       nums[start] = nums[end];
+      //console.log("change to " + nums[start]);
       nums[end] = temp;
+      //console.log(temp);
       start++;
       end--;
+      //console.log(nums);
     }
   }
 //call the function
