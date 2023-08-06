@@ -15,6 +15,7 @@ function rotate(nums, k) {
   // Rotate the remaining elements and place them after the k rotated elements in the result array
   for (let i = k; i < nums.length; i++) {
     result[i] = nums[j];
+    //console.log(result);
     j++;
   }
   
@@ -27,4 +28,4 @@ function rotate(nums, k) {
 }
 
 //usage
-rotate([1,2,3,4,5,6], 7);
+rotate([1,2,3,4,5,6], 2);
